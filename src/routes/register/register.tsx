@@ -38,7 +38,7 @@ function onSubmit(values: z.infer<typeof formSchema>) {
   console.log(values);
 
   navigate("/login", {
-    state: { success: "Pendaftaran berhasil 🎉 Silakan login." }
+    state: { success: "Pendaftaran berhasil, Silakan login." }
   });
 }
   return (
