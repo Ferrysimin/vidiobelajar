@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fffdf3;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@layer utilities {
+    .heading1 {
+        @apply font-lato font-bold text-[48px];
+    }
+
+    .heading2 {
+        @apply font-lato font-bold text-[40px];
+    }
+
+    .heading3 {
+        @apply font-lato font-bold text-[32px];
+    }
+
+    .heading4 {
+        @apply font-lato font-bold text-[24px];
+    }
+
+    .heading5 {
+        @apply font-lato font-bold text-[20px];
+    }
+
+    .heading6 {
+        @apply font-lato font-bold text-[18px] tracking-[0.2px];
+    }
+
+    .bodyLargeBold {
+        @apply font-sans font-bold text-[18px] tracking-[0.2px];
+    }
+
+    .bodyLargeSemibold {
+        @apply font-sans font-semibold text-[18px] tracking-[0.2px];
+    }
+
+    .bodyLargeMedium {
+        @apply font-sans font-medium text-[18px] tracking-[0.2px];
+    }
+
+    .bodyLargeRegular {
+        @apply font-sans font-normal text-[18px] tracking-[0.2px];
+    }
+
+    .bodyMediumBold {
+        @apply font-sans font-bold text-[16px] tracking-[0.2px];
+    }
+
+    .bodyMediumSemibold {
+        @apply font-sans font-semibold text-[16px] tracking-[0.2px];
+    }
+
+    .bodyMediumMedium {
+        @apply font-sans font-medium text-[16px] tracking-[0.2px];
+    }
+
+    .bodyMediumRegular {
+        @apply font-sans font-normal text-[16px] tracking-[0.2px];
+    }
+
+    .bodySmallBold {
+        @apply font-sans font-bold text-[14px] tracking-[0.2px];
+    }
+
+    .bodySmallSemibold {
+        @apply font-sans font-semibold text-[14px] tracking-[0.2px];
+    }
+
+    .bodySmallMedium {
+        @apply font-sans font-medium text-[14px] tracking-[0.2px];
+    }
+
+    .bodySmallRegular {
+        @apply font-sans font-normal text-[14px] tracking-[0.2px];
+    }
+}
